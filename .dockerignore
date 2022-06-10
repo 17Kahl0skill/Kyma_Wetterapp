@@ -1,0 +1,5 @@
+node_modules
+npm-debug.log
+data/Niederschlag_file.json
+data/Sonnenstunden_file.json
+data/temperature_file.json
