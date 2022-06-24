@@ -1,6 +1,7 @@
 import axios from 'axios';
 import cheerio from 'cheerio';
 
+
 export class WebScraper {
     /**
      * Erlaubt das downloaden und reiningen von Wetterdaten.
@@ -78,7 +79,7 @@ export class WebScraper {
          * @param data ist das HTML Element mit den Daten
          * @returns datasheet ist ein Array, der alle Daten der HTML beinhaltet (Reihenweise gespeichert).
          */
-
+         
         //spaltet HTMl in Array und löscht einen unnötigen Satz
         let array = data_row;
         array.shift();

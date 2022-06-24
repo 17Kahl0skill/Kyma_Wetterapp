@@ -13,7 +13,7 @@ export function toJSON(data,name) {
             Jahr:Number(row[0]),
             Monat:Number(row[1]),
             Bundesland:row[2],
-            Temperatur:Number(row[3])
+            [name]:Number(row[3])
           };
         });
         data.sort();

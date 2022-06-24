@@ -1,5 +1,5 @@
 import express from "express";
-import temp from '../data/temperature_file.json' assert { type: 'json' };
+import temp from '../data/Temperature_file.json' assert { type: 'json' };
 const router = express.Router();
 
 

@@ -10,10 +10,10 @@ server.use('/Sonnenstunden',Sonnenstunden);
 
 server.set('json spaces',1);
 
-server.listen(3000,()=> console.log('Server läuft auf Port 3000!'));
+server.listen(8080,()=> console.log('Server läuft auf Port 8080!'));
 
 server.get('/',(req,res)=>{
 
     console.log('App läuft.');
-    res.send('kannst daten abfragen')
+    res.send('Du kannst daten abfragen über /Niederschlag , /Sonnenstunden und /Temperatur')
 })

@@ -9,7 +9,7 @@ import { toJSON } from "./data/flatfileData.js";
 const web = new WebScraper() ;
 const url1 = 'https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/'
 const url2 = 'https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/sunshine_duration/'
-const url3 ='https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/precipitation/'
+const url3 = 'https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/precipitation/'
 
 //web.multipleDatasites(url1);
 //web.multipleDatasitesAsync(url1);
@@ -17,7 +17,7 @@ const url3 ='https://opendata.dwd.de/climate_environment/CDC/regional_averages_D
 //web.multipleDatasitesAsync(url3);
 
     web.multipleDatasitesAsync(url1).then((result) => {
-        toJSON(result,'temperature');
+        toJSON(result,'Temperature');
     }).catch((err) => {
         console.log(err);
     });
